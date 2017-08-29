@@ -29,7 +29,7 @@ Catmandu::Allegro - Catmandu modules for working with Allegro data.
 
 =head1 DESCRIPTION
 
-Catmandu::Allegro provides methods to work with Allegero data within the 
+Catmandu::Allegro provides methods to work with Allegro data within the 
 L<Catmandu> framework. See L<Catmandu::Introduction> and 
 L<http://librecat.org/> for an introduction into Catmandu.
 
