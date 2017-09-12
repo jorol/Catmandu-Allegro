@@ -48,7 +48,7 @@ sub next {
         $self->{rec_number}++;
         my $record = _decode($data);
 
-        # get last subfield from 001 as id
+        # get last subfield from #00 as id
         my ($id) = map { $_->[-1] } grep { $_->[0] =~ '#00' } @{$record};
         return { _id => $id, record => $record };
     }
@@ -74,17 +74,19 @@ sub _decode {
         my $ind = substr( $field, 3, 1 );
         my $data = substr( $field, 4 );
 
-        # check for a 3-digit numeric tag
+        # check for #2-digit tag
         if ($tag !~ m/^#[0-9]{2}$/xms) {
             carp "Invalid tag: \"$tag\"";
             next;
         }
 
-        # check if indicator is an single alphabetic character
-        if ($ind !~ m/^[0-9A-Za-z\s]$/xms) {
-            carp "Invalid indicator: \"$ind\"";
-            next;
-        }
+
+        # check indicator
+        # disabled, as exact form not clear        
+        # if ($ind !~ m/^[0-9A-Za-z\s]$/xms) {
+        #     carp "Invalid indicator: \"$ind\"";
+        #     next;
+        # }
 
         my @data_elements = split $SUBFIELD_INDICATOR, $data;
 
@@ -108,10 +110,68 @@ __END__
 
 =head1 NAME
 
-allegrc::Parser::Plain - Plain allegro-C format parser
+Allegro::Parser::Plain - Allegro plain format parser
 
-=head2 DESCRIPTION
+=head1 SYNOPSIS
 
-...
+L<Allegro::Parser::Plain> is a parser for Allegro records, like:
+
+    #00 z0010000
+    #74 Berlin
+    #8n Sozialistische Einheit
+    #8o Hrsg. Organisationsausschuß SPD und KPD
+    ...
+
+L<Allegro::Parser::Plain> expects UTF-8 encoded files as input. Otherwise 
+provide a filehande with a specified I/O layer.
+
+    use Allegro::Parser::Plain;
+
+    my $parser = Allegro::Parser::Plain->new( $filename );
+
+    while ( my $record_hash = $parser->next() ) {
+        # do something        
+    }
+
+=head1 Arguments
+
+=over
+
+=item C<file>
+
+Path to file with Allegro records.
+
+=item C<fh>
+
+Open filehandle for file with Allegro records.
+
+=back
+
+=head1 METHODS
+
+=head2 new($filename | $filehandle)
+
+=head2 next()
+
+Reads the next record from Allegro input stream. Returns a Perl hash.
+
+=head2 _decode($record)
+
+Deserialize a Allegro record to an ARRAY of ARRAYs.
+
+=head1 SEE ALSO
+
+L<Catmandu::Importer::Allegro>.
+
+=head1 AUTHOR
+
+Johann Rolschewski <jorol@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Johann Rolschewski.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

@@ -71,9 +71,9 @@ Catmandu::Fix::Bind::allegro_each - a binder that loops over Allegro fields
 
 =head1 DESCRIPTION
 
-The allegro_each binder will iterate over each individual allegor-C field and execute the fixes only in context over each individual field.
+The allegro_each binder will iterate over each individual Allegro field and execute the fixes only in context over each individual field.
 
-If a allegro-C record contains:
+If an Allegro record contains:
 
     #8o 6.10.1845: $ªDerª Bote$z2017384-2
     #8o11.4.1866: $ªDerª Bote vom Geising$z1318084-8

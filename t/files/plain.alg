@@ -1,11 +1,11 @@
 #00 z0000264
 #74 Altenberg
 #89Z1318084-8
-#8n ªDerª Bote vom Geising
-#8o 6.10.1845: $ªDerª Bote$z2017384-2
-#8o11.4.1866: $ªDerª Bote vom Geising$z1318084-8
-#8o21.10.1878: $ªDerª Bote vom Geising und Mglitzthal-Zeitung$z1318091-5
-#8o33.6.1941: $Mglitztal- und Geising-Bote$z2077400-X
+#8n ¬Der¬ Bote vom Geising
+#8o 6.10.1845: $¬Der¬ Bote$z2017384-2
+#8o11.4.1866: $¬Der¬ Bote vom Geising$z1318084-8
+#8o21.10.1878: $¬Der¬ Bote vom Geising und Müglitzthal-Zeitung$z1318091-5
+#8o33.6.1941: $Müglitztal- und Geising-Bote$z2077400-X
 #92 1849 - 1865 nicht erschienen
 #93 14b1845 - 1848, 28.9.; 1866 - 1945, 5.5. (L)c82 Ro
 #94 14b1845 - 1848, 28.9.; 1866 - 1933; 1941, 3.6. - 1945, 5.5.(L)
@@ -30,8 +30,8 @@
 #99n20130115/14:49:05
 
 #00 z0009300
-#74 Bergen auf Rgen
-#8n Tageblatt fr Bergen und die Insel Rgen
+#74 Bergen auf Rügen
+#8n Tageblatt für Bergen und die Insel Rügen
 #93 9b1926dj
 #99e20130116/13:09:33-8601/8600
 #99n20130115/14:55:14
@@ -39,7 +39,7 @@
 #00 z0000700
 #74 Berlin; Burg bei Magdeburg
 #89Zon
-#8n ªDasª Conversationsblatt
+#8n ¬Das¬ Conversationsblatt
 #93 46b1836 - 1839dj
 #94 109b1836 - 1839
 #99e20161116/11:16:20-5/358
@@ -47,9 +47,9 @@
 
 #00 z0001359
 #74 Berlin
-#8n Verwaltungsblatt des preuáischen Landesverbandes jdischerGemeinden
-#8o Mai 1934: $Gemeindeblatt fr die jdischen GemeindenPreuáens$
-#8o1Aug. 1937: $Jdisches Gemeindeblatt fr die Synagogen-Gemeinden in Preuáen und Norddeutschland$
+#8n Verwaltungsblatt des preußischen Landesverbandes jüdischerGemeinden
+#8o Mai 1934: $Gemeindeblatt für die jüdischen GemeindenPreußens$
+#8o1Aug. 1937: $Jüdisches Gemeindeblatt für die Synagogen-Gemeinden in Preußen und Norddeutschland$
 #93 Dm 11b1923, 25.9. - 1938, 1.11. (L)c1 Rodj
 #94 16b1923, 25.9. - 1938, 1.11. (L)
 #94130b1923, 25.9. - 1938, 1.11. (L)
@@ -73,7 +73,7 @@
 #89Z40277-1
 #8n Bauern-Echo / A
 #8o 1.8.1990: $Deutsches Landblatt$z1038983-0
-#8o1Ausgabe A fr die Regionen Potsdam, Berlin, Cottbus, Frankfurt/Oder
+#8o1Ausgabe A für die Regionen Potsdam, Berlin, Cottbus, Frankfurt/Oder
 #92 18.7.1948 - 31.7.1992
 #93 101bb1963 - 1992, 31.7.dj
 #931Bo 414b1948, 18.7. - 1954; 1991c13 Ro
@@ -93,14 +93,14 @@
 #00 z0010000
 #74 Berlin
 #8n Sozialistische Einheit
-#8o Hrsg. Organisationsausschuá SPD und KPD
+#8o Hrsg. Organisationsausschuß SPD und KPD
 #93 B 479b1946, 1 - 9dj
 #99e20130226/13:58:44-8124/165
 #99n20130115/14:54:48
 
 #00 z0009700
 #74 Berlin
-#8n Reichsverwaltungsblatt und Preuáisches Verwaltungsblatt
+#8n Reichsverwaltungsblatt und Preußisches Verwaltungsblatt
 #8o Nr. 40, 1940: $Reichsverwaltungsblatt$
 #93 30b1933 - 1934dj
 #94 1ab1940
@@ -109,8 +109,8 @@
 
 #00 z0000900
 #74 Berlin
-#8n Sonntags-Zeitung fr Deutschlands Frauen
-#8o Sp„ter: $Sonntags-Zeitung frs deutsche Haus$
+#8n Sonntags-Zeitung für Deutschlands Frauen
+#8o Später: $Sonntags-Zeitung fürs deutsche Haus$
 #93 1ab1900 - 1907dj
 #94 21/32cb1900 - 1907
 #99e20170313/14:07:11-10/1476

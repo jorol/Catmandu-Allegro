@@ -68,34 +68,45 @@ Catmandu::Importer::Allegro - Package that imports Allegro data
         # ...
     });
 
-To convert between Allegro syntax variants with the L<catmandu> command line client:
+To convert Allegro data to other data serializations with the L<catmandu> command line client:
 
-    catmandu convert Allegro --type raw to Allegro --type xml < plain.alg
+    catmandu convert Allegro --type plain to YAML < plain.alg
 
 =head1 Allegro
 
-The parsed Allegro record is a HASH containing two keys '_id' containing the #00 field (or the system
-identifier of the record) and 'record' containing an ARRAY of ARRAYs for every field:
+The parsed Allegro record is a HASH containing two keys '_id' containing the 
+#00 field (or the system identifier of the record) and 'record' containing 
+an ARRAY of ARRAYs for every field:
 
- {
-  'record' => [
-                [
-                    '001',
-                    ' ',
-                    '_',
-                    'fol05882032 '
-                ],
-                [
-                    245,
-                    'a',
-                    'a',
-                    'Cross-platform Perl /',
-                    'c',
-                    'Eric F. Johnson.'
-                ],
-        ],
-  '_id' => 'fol05882032'
- } 
+{
+   "record" : [
+      [
+         "#00",
+         " ",
+         "_",
+         "z0010000"
+      ],
+      [
+         "#74",
+         " ",
+         "_",
+         "Berlin"
+      ],
+      [
+         "#8n",
+         " ",
+         "_",
+         "Sozialistische Einheit"
+      ],
+      [
+         "#8o",
+         " ",
+         "_",
+         "Hrsg. Organisationsausschuß SPD und KPD"
+      ]
+   ],
+   "_id" : "z0010000"
+},
 
 =head1 METHODS
 
@@ -111,9 +122,7 @@ C<fh>, etc.) the importer can be configured with the following parameters:
 
 =item type
 
-Describes the Allegro syntax variant. Supported values (case ignored) include the
-default value C<xml> for MABxml, C<disk> for human-readable Allegro serialization 
-("Diskettenformat") or C<raw> for data-exchange Allegro serialization ("Bandformat").
+Describes the Allegro syntax variant. Supported values (case ignored): C<plain> for Allegro standard record format (default).
 
 =back
 

@@ -144,32 +144,21 @@ Catmandu::Fix::allegro_map - copy Allegro values of one field to a new field
 
 =head1 SYNOPSIS
 
-    # Copy all 245 subfields into the my.title hash
-    allegro_map('245','my.title');
+    # Copy all #8o into the my.title hash
+    allegro_map('#8o','my.title');
 
-    # Copy the 245-$a$b$c subfields into the my.title hash
-    allegro_map('245abc','my.title');
+    # Copy the #93$b$c$d subfields into the my.coverage hash
+    allegro_map('#93bcd','my.coverage');
 
-    # Copy the 100 subfields into the my.authors array
-    allegro_map('100','my.authors.$append');
+    # Copy the #93$b$c$d subfields into the my.coverage array
+    allegro_map('#93bcd','my.coverage.$append');
     
-    # Add the 710 subfields into the my.authors array
-    allegro_map('710','my.authors.$append');
+    # Copy the #99n characters 0-7 into the my.date hash
+    allegro_map('#99[n]_/0-7','my.date');
 
-    # Copy the 600-$x subfields into the my.subjects array while packing each into a genre.text hash
-    allegro_map('600x','my.subjects.$append', -in => 'genre.text');
+=head1 SEE ALSO
 
-    # Copy the 008 characters 35-35 into the my.language hash
-    allegro_map('008_/35-35','my.language');
-
-    # Copy all the 600 fields into a my.stringy hash joining them by '; '
-    allegro_map('600','my.stringy', -join => '; ');
-
-    # When 024 field exists create the my.has024 hash with value 'found'
-    allegro_map('024','my.has024', -value => 'found');
-
-    # Do the same examples now with the fields in 'record2'
-    allegro_map('245','my.title', -record => 'record2');
+L<Catmandu::Fix>
 
 =head1 AUTHOR
 

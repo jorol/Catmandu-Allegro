@@ -58,7 +58,7 @@ Catmandu::Fix::Condition::allegro_match - Conditionals on Allegro fields
     # allegro_match(ALLEGRO_PATH,REGEX)
 
     if allegro_match('#89Z','\d+-[\dxX]')
-    add_field('zdb','true')
+        add_field('zdb','true')
     end
 
 =head1 DESCRIPTION
@@ -68,7 +68,7 @@ for a complete overview of the Fix language.
 
 =head1 NAME
 
-Catmandu::Fix::Condition::allegro_match - Conditionals on PICA fields
+Catmandu::Fix::Condition::allegro_match - Conditionals on Allegro fields
 
 =head1 SEE ALSO
 
