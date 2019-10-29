@@ -11,16 +11,17 @@ with 'Catmandu::Importer';
 has type => ( is => 'ro', default => sub {'Plain'} );
 has id   => ( is => 'ro', default => sub {'#00'} );
 
-sub mab_generator {
+sub allegro_generator {
     my $self = shift;
 
     my $file;
     my $type = lc($self->type);
+
     if ( $type eq 'plain' ) {
         $file =Allegro::Parser::Plain->new( $self->fh );
     }
     else {
-        die "unknown format";
+        Catmandu::Error->throw('unknown type');
     }
 
     my $id = $self->id;
@@ -37,7 +38,7 @@ sub generator {
     
     my $type = lc($self->type);
     if ( $type =~ /plain$/ ) {
-        return $self->mab_generator;
+        return $self->allegro_generator;
     }
     else {
         die "need Allegro Plain data";
